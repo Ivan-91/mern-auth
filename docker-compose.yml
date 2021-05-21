@@ -1,14 +1,14 @@
 version: "3"
 services:
   client:
-    image: client
+    image: ivanjohn/auth-react
     stdin_open: true
     ports: 
       - "3000:3000"
     networks:
       - mern-app
   server:
-    image: server
+    image: ivanjohn/auth-node-mongo
     ports:
       - "5000:5000"
     networks:
